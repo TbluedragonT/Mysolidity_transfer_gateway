@@ -46,7 +46,7 @@ module.exports = async function (callback) {
     let balance = await token.balanceOf(alice)
     console.log('Alice token balance', balance.toString(10))
 
-    // CHANGE THE AMOUNT TO WHATEVER YOU WANT HERE
+    // CHANGE THE AMOUNT TO WHATEVER YOU WANT HERE.
     let amount = sciNot(1, 18) // default to 1 x 10^18
 
     console.log('Alice approving', amount.toString(), 'to gateway', gateway.address)
